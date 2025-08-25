@@ -1,0 +1,10 @@
+projects_dir="/Users/q/Music/! Projects"
+# projects_dir="/Users/q/Coding/bitwig-previewer/"
+
+echo "$projects_dir"
+
+output_dir="./output"
+
+mkdir -p "$output_dir"
+
+find "$projects_dir" -type f -name "*.mp3" -exec ln -s {} "$output_dir" \;
