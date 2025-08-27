@@ -1,0 +1,2 @@
+- [ ] Currently only works with absolute path. why??
+- [ ] auto version (using fswatch) doesn't work as expected

@@ -1,0 +1,14 @@
+#!/bin/bash
+script_dir="$(dirname "$0")"
+
+# projects_dir="/Users/q/Music/! Projects"
+
+projects_dir="$script_dir/input/"
+previews_dir="$script_dir/output/"
+
+fswatch "$projects_dir" -r | while IFS= read -r -d "" file
+do
+  echo "Detected change: $file"
+  
+  "$script_dir/bwprev" "$projects_dir" "$previews_dir" "$file"
+done

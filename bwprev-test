@@ -1,0 +1,11 @@
+#!/bin/bash
+script_dir="$(dirname "$0")"
+
+
+# projects_dir="$script_dir/input/"
+projects_dir="/Users/q/Coding/bitwig-previewer/input"
+
+# previews_dir="$script_dir/output/"
+previews_dir="/Users/q/Coding/bitwig-previewer/output"
+
+"$script_dir/bwprev" "$projects_dir" "$previews_dir"

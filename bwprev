@@ -1,13 +1,20 @@
 #!/bin/bash
 
-projects_dir="/Users/q/Music/! Projects"
+projects_dir=$1
+previews_dir=$2
 
-# echo "$projects_dir"
+mkdir -p "$previews_dir"
 
-preview_dir="./output"
+# Find broken symlinks
+find "$previews_dir" -type l ! -exec test -e {} \; -exec rm {} \; -print
 
-mkdir -p "$preview_dir"
+echo "activated bwprev"
 
-find . -type l ! -exec test -e {} \; -exec rm {} \; -print
-
-find "$projects_dir" -type f \( -name "pv*.mp3" -o -name "pv*.wav" \) -exec ln -s {} "$output_dir" \;
+if [ -n "$3" ]; then
+  if [[ "$3" == pv* ]]; then
+    ln -s "$3" "$previews_dir" \;
+  fi
+else
+  find "$projects_dir" -type f -name "pv-*" -exec ln -s {} "$previews_dir" \;
+  # find "$projects_dir" -type f -name "pv-*" -exec echo {} \;
+fi
