@@ -1,3 +1,5 @@
+#!/bin/bash
+
 projects_dir="/Users/q/Music/! Projects"
 # projects_dir="/Users/q/Coding/bitwig-previewer/"
 
@@ -7,4 +9,6 @@ output_dir="./output"
 
 mkdir -p "$output_dir"
 
-find "$projects_dir" -type f -name "*.mp3" -exec ln -s {} "$output_dir" \;
+find . -type l ! -exec test -e {} \; -exec rm {} \; -print
+
+find "$projects_dir" -type f \( -name "pv*.mp3" -o -name "pv*.wav" \) -exec ln -s {} "$output_dir" \;

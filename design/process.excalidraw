@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "iY3Qzwm77LbYteDVykKWB",
+      "type": "text",
+      "x": 714.4119268045523,
+      "y": 26.238491259438263,
+      "width": 583.0196533203125,
+      "height": 575,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aO",
+      "roundness": null,
+      "seed": 1272197913,
+      "version": 1169,
+      "versionNonce": 905451511,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1756180730279,
+      "link": null,
+      "locked": false,
+      "text": "NEVER lose a project file again!\n\nAny time an export from Bitwig is saved,\nthe script runs and presents different naming options:\n    1. Current name (could be whatever I typed)\n    2. Project name (how to detect not known yet)\n\nThen I could add whatever other info I want:\n    1. Name only\n    2. Date + Name\n    3. Name + Version\n    ... Custom\n\nIt then gets saved to Bitwig_Project/Exports/...\nand symlinked to a set Exports directory w/ other exports\nfor quick previews\n\nExports directory settings:\n    1. Only show most recent export for each project\n    2. Sync with Untitled\n\n\nAt some point, should add functionality for other DAW's",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "NEVER lose a project file again!\n\nAny time an export from Bitwig is saved,\nthe script runs and presents different naming options:\n    1. Current name (could be whatever I typed)\n    2. Project name (how to detect not known yet)\n\nThen I could add whatever other info I want:\n    1. Name only\n    2. Date + Name\n    3. Name + Version\n    ... Custom\n\nIt then gets saved to Bitwig_Project/Exports/...\nand symlinked to a set Exports directory w/ other exports\nfor quick previews\n\nExports directory settings:\n    1. Only show most recent export for each project\n    2. Sync with Untitled\n\n\nAt some point, should add functionality for other DAW's",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
