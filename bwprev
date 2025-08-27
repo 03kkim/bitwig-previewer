@@ -1,13 +1,12 @@
 #!/bin/bash
 
 projects_dir="/Users/q/Music/! Projects"
-# projects_dir="/Users/q/Coding/bitwig-previewer/"
 
-echo "$projects_dir"
+# echo "$projects_dir"
 
-output_dir="./output"
+preview_dir="./output"
 
-mkdir -p "$output_dir"
+mkdir -p "$preview_dir"
 
 find . -type l ! -exec test -e {} \; -exec rm {} \; -print
 
